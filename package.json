@@ -26,7 +26,7 @@
     "project management"
   ],
   "dependencies": {
-    "frappe-gantt": "^0.3.0",
+    "frappe-gantt": "^0.6.1",
     "moment": "^2.24.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

@@ -33,21 +33,7 @@ const tasks = [
 ] as Task[];
 
 class App extends React.Component<any, any> {
-  state = { mode: ViewMode.Month };
-
-  componentDidMount() {
-    console.log("test");
-
-    setTimeout(() => {
-      console.log("Setting State!");
-      this.setState({ mode: ViewMode.Week });
-
-      setTimeout(() => {
-        console.log("Setting State!");
-        this.setState({ mode: ViewMode.HalfDay });
-      }, 3000);
-    }, 3000);
-  }
+  state = { mode: ViewMode.Day };
 
   render() {
     return (

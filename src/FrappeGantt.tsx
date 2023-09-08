@@ -47,6 +47,7 @@ export class FrappeGantt extends React.Component<FrappeGanttProps, any> {
 
   componentDidMount() {
     this._gantt = new Gantt(this._svg.current, this.state.tasks, {
+      language: 'fr',
       on_click: this.props.onClick,
       on_view_change: this.props.onViewChange,
       on_progress_change: (task: Task, progress: number) => {
@@ -69,7 +70,7 @@ export class FrappeGantt extends React.Component<FrappeGanttProps, any> {
 
   render() {
     return (
-      <div style={{ overflow: "scroll" }} ref={this._target}>
+      <div style={{ overflow: "auto" }} ref={this._target}>
         <svg
           ref={this._svg}
           width="100%"
